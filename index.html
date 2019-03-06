@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HBD!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Margarine" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+        <script src="scripts/index.js"></script>
+    </head>
+    <body>
+        <!-- INTRO WITH CURSOR< LOADING MORTYS AND CONFETTI -->
+        <div class="intro">
+            <div class="cursor">
+                <p class="animated fadeInDown">Choose your cursor image:</p>
+                <div class="cursor-rows">
+                    <div class="row1 animated bounceInDown">
+                        <a href="javascript:void(0)"><img class="hawks" src="img/cursors/hawks-big.png"></a>
+                        <a href="javascript:void(0)"><img class="alison" src="img/cursors/alison-big.jpg"></a>
+                        <a href="javascript:void(0)"><img class="ltc" src="img/cursors/ltc-big.png"></a>
+                        <a href="javascript:void(0)"><img class="audien" src="img/cursors/audien-big.jpeg"></a>
+                        <div class="row1-names">
+                            <p>Hawks</p>
+                            <p>Alison</p>
+                            <p>LTC</p>
+                            <p>Audien</p>
+                        </div>
+                    </div>
+                    <div class="row2 animated bounceInUp">
+                        <a href="javascript:void(0)"><img class="porter" src="img/cursors/porter-big.jpg"></a>
+                        <a href="javascript:void(0)"><img class="3lau" src="img/cursors/3lau-big.jpg"></a>
+                        <a href="javascript:void(0)"><img class="rezz" src="img/cursors/rezz-big.png"></a>
+                        <div class="row2-names">
+                            <p>Porter</p>
+                            <p>3lau</p>
+                            <p>Rezz</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="cursor-button">DONE!</button>
+            </div>
+
+            <div class="loading-mortys">
+                <p class="animated fadeInDown">Hold on, I'm getting everything ready for you, Tanner.</p>
+                <div class="morty-progress animated fadeInUp">
+                    <img src="img/mortys/morty1.png">
+                </div>
+                <audio>
+                        <source src="audio/loading.mp3" type="audio/mpeg">
+                </audio>
+                <button>LET'S GO!</button>
+            </div>
+            
+            <div class="confetti">
+                <canvas id="confetti"></canvas>
+                <script src="scripts/confetti.js"></script>
+                <button>OMG!!</button>
+                <audio>
+                    <source src="audio/greeting.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- COMICS -->
+        <div class="comics">
+            <div class="infinite-timelines">
+                <button>SKKRR</button>
+                <audio>
+                    <source src="audio/infinite.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="messages-collected">
+                <button>AWWWW</button>
+                <audio>
+                    <source src="audio/collected.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="megaseeds">
+                <button>LOLOL</button>
+                <audio>
+                    <source src="audio/megaseeds.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="waba">
+                <button>BYEEE</button>
+                <audio>
+                    <source src="audio/bye-waba.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- YOUTUBE HBD TRAP -->
+        <div class="youtube">
+                <iframe width="0" height="0" src="https://www.youtube.com/embed/yPhvoEWfgIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <svg viewBox="0 0 600 300">
+                    <!-- Symbol -->
+                    <symbol id="s-text">
+                        <text text-anchor="middle"
+                            x="50%" y="50%" dy=".35em">
+                        HAPPY BIRTHDAY!
+                        </text>
+                    </symbol>  
+                    
+                    <!-- Duplicate symbols -->
+                    <use xlink:href="#s-text" class="text"
+                            ></use>
+                    <use xlink:href="#s-text" class="text"
+                            ></use>
+                    <use xlink:href="#s-text" class="text"
+                            ></use>
+                    <use xlink:href="#s-text" class="text"
+                            ></use>
+                    <use xlink:href="#s-text" class="text"
+                            ></use>
+                </svg>
+                <button>Go To Messages</button>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- NAV LINKS -->
+            <nav>
+                <a class="nav-messages" href="javascript:void(0)">Messages</a>
+                <a class="nav-photos" href="javascript:void(0)">Photos</a>
+                <a class="nav-movies" href="javascript:void(0)">Movie Suggestions</a>
+            </nav>
+            <!-- MESSAGES -->
+            <div class="messages-container">
+                <h2>These rare and exotic Mortys have been sent to deliver the messages. Click a Morty to view!</h2>
+                <!-- JUSTIN CARD -->
+                <div class="message-cards">
+                    <div class="pocket-mortys"> 
+                        <div class="front"> 
+                            <img src="img/pocket-mortys/61-wizard-morty.png" alt="#61 Wizard Morty">
+                        </div> 
+                        <div class="back" style="background-image: url('img/pocket-mortys/61-wizard-morty-back.png')">
+                            <div class="back-messages">
+                                <div class="message">
+                                    <h2>Message:</h2>
+                                    <p>Make it to Tomorrowland and survive till 26.</p>
+                                </div>
+                                <div class="songs">
+                                    <h2>Songs You Should Listen To:</h2>
+                                    <ul class="song-list">
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/4dPTHF7N8S9jM1xIHyF2W8" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/0k6DnZMLoEUH8NGD5zh2SE" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/4P6BuLsqtg5uISdE77ypI9" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                    </ul>
+                                    <ul class="artist-list">
+                                        <li>Levels - Avicii</li>
+                                        <li>Ayo - Chris Brown, Tyga</li>
+                                        <li>Ayy Ladies - Travis Porter, Tyga</li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h2>-Justin</h2>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="morty-description">
+                        <h3>#61 WIZARD MORTY</h3>
+                        <p>This Morty enjoys role playing. He uses it to escape from the real world, imagining himself as a powerful wizard who rules entire kingdoms.</p>
+                        <h3>COMBINATIONS</h3>
+                        <div class="combination">
+                            <img src="img/pocket-mortys/61-wizard-morty-combination.png" alt="#82 combination">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CALEB CARD -->
+                <div class="message-cards">
+                    <div class="pocket-mortys"> 
+                        <div class="front"> 
+                            <img src="img/pocket-mortys/30-rainbow-shirt.PNG" alt="#30 Rainbow Shirt Morty">
+                        </div> 
+                        <div class="back" style="background-image: url('img/pocket-mortys/30-rainbow-shirt-back.PNG')">
+                            <div class="back-messages">
+                                <div class="message">
+                                    <h2>Message:</h2>
+                                    <p>Happy Birthday! I love you!</p>
+                                </div>
+                                <div class="songs">
+                                    <h2>Songs You Should Listen To:</h2>
+                                    <ul class="song-list">
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/5k5amYGRUCR1OviNp7UG1e" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/3Ab0YwaCsYaFWTK3TgscF0" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/3VEFybccRTeWSZRkJxDuNR" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                    </ul>
+                                    <ul class="artist-list">
+                                        <li>Dr. Worm - Dear Abbys</li>
+                                        <li>Eat The Poop</li>
+                                        <li>Peaches - The Presidents Of The United States of America</li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h2>-Caleb</h2>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="morty-description">
+                        <h3>#30 RAINBOW SHIRT MORTY</h3>
+                        <p>This Morty is the "1 of 2" where neither friends nor loving family may go, his eyes watching a thousand suns and a thousand moons rise and fall together a thousand times.</p>
+                        <h3>COMBINATIONS</h3>
+                        <div class="combination">
+                            <img src="img/pocket-mortys/30-rainbow-shirt-combination.png" alt="#30 combination">
+                        </div>
+                    </div>
+                </div>            
+
+                <!-- LAURA CARD -->
+                <div class="message-cards">
+                    <div class="pocket-mortys"> 
+                        <div class="front"> 
+                            <img src="img/pocket-mortys/146-rick-morty.png" alt="#146 Rick Morty">
+                        </div> 
+                        <div class="back" style="background-image: url('img/pocket-mortys/146-rick-morty-back.png')">
+                            <div class="back-messages laura">
+                                <div class="message">
+                                    <h2>Message:</h2>
+                                    <p>My Dearest Tanner,</p>
+                                    <p>I want you to know how  extremely proud I am to be your mother. You have always been a bright, well-mannered and well-behaved (at least when we were watching) son. Nothing makes a parent more proud than to have other complement you on your children's manners and behavior. Keep fighting for your dreams and reaching higher! I know you will go very far in this life. Pleases hold on to your Faith in God and never forget who we have to thank for everything. When the going gets tough, He will be there if you have true faith!</p>
+                                    <p>Happy, Happy 25th Birthday and I hope you have many more wonderful years to celebrate!
+                                    </p>
+                                    <p>I love you a whole bunch of bananas, way up by God!</p>
+                                </div>
+                                <div class="songs">
+                                    <h2>Songs You Should Listen To:</h2>
+                                    <ul class="song-list">
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/4QJLKU75Rg4558f4LbDBRi" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/5fiKctaoL3mNtjNROpw0zW" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/0RTzJVkunbGwuRjXDFHnjf" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                    </ul>
+                                    <ul class="artist-list">
+                                        <li>If Today Was Your Last Day - Nickelback</li>
+                                        <li>Best Days - Graham Colton</li>
+                                        <li>Dreamer - Axwell/Ingrosso</li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h2>-Mom</h2>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="morty-description">
+                        <h3>#146 RICK MORTY</h3>
+                        <p>This Morty was tired of always being told he was an idiot and would never have even half of the brain power that his Rick possessed.</p>
+                        <h3>COMBINATIONS</h3>
+                        <div class="combination">
+                            <img src="img/pocket-mortys/146-rick-morty-combination.png" alt="#30 combination">
+                        </div>
+                    </div>
+                </div>   
+
+                <!-- MIKE CARD -->
+                <div class="message-cards">
+                    <div class="pocket-mortys"> 
+                        <div class="front"> 
+                            <img src="img/pocket-mortys/149-capn-morty.png" alt="#146 Rick Morty">
+                        </div> 
+                        <div class="back" style="background-image: url('img/pocket-mortys/149-capn-morty-back.png')">
+                            <div class="back-messages mike">
+                                <div class="message">
+                                    <h2>Message:</h2>
+                                    <p>You are a smart and driven kid. Your mom and I could not be more proud of how you knew what you wanted to be in life and just went for it. God gave you such a smart mind and you really took what was given to you and used it to the best of your ability to get where you are in life.</p>
+                                    <p>I tell everyone about your accomplishments. What I am proud of is that we are close as a family. Not a week goes by that we are not talking or texting. I really hope that does not change. You are a good son and frien. I hope I have done my job as a dad to where I have taught you all you need for this life and the next. I can't wait to see what you will achieve and do going forward.</p>
+                                    <p>God bless, Happy Birthday! I love you so much, Tanner! The big 25, I am a very proud dad.</p>                                    
+                                </div>
+                                <div class="songs">
+                                    <h2>Songs You Should Listen To:</h2>
+                                    <ul class="song-list">
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/3DPyS3odFIWQ3E2IFqHEdG" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/1A5V1sxyCLpKJezp75tUXn" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/2bxY1baYlyXNzmjOkFvqId" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                    </ul>
+                                    <ul class="artist-list">
+                                        <li>Suicide Blonde - INXS</li>
+                                        <li>Closing Time - Semisonic</li>
+                                        <li>New Sensation - INXS</li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h2>-Dad</h2>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="morty-description">
+                        <h3>#149 CAP'N MORTY</h3>
+                        <p>This notorious Morty is the captain of a large vessel named Jessica's Pearl and once traded his eye for a barrel of gun powder infused rum.</p>
+                        <h3>COMBINATIONS</h3>
+                        <div class="combination">
+                            <img src="img/pocket-mortys/149-capn-morty-combination.png" alt="#30 combination">
+                        </div>
+                    </div>
+                </div>     
+
+                <!-- CHRIS CARD -->
+                <div class="message-cards">
+                    <div class="pocket-mortys"> 
+                        <div class="front"> 
+                            <img src="img/pocket-mortys/125-banana-morty.png" alt="#125 Banana Morty">
+                        </div> 
+                        <div class="back" style="background-image: url('img/pocket-mortys/125-banana-morty-back.png')">
+                            <div class="back-messages">
+                                <div class="message">
+                                    <h2>Message:</h2>
+                                    <p>Happy Birthday to the fastest best friend I've ever made!</p> 
+                                    <p>This year you should take a bartender class to learn how to make awesome drinks.</p>
+                                </div>
+                                <div class="songs">
+                                    <h2>Songs You Should Listen To:</h2>
+                                    <ul class="song-list">
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/1LFXOFyg2RlBHp1DZzjWpD" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/3xmhECNTS8KZQ7C6ye7JIK" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                        <li>
+                                            <iframe src="https://open.spotify.com/embed/track/4UVIFaLeqgi4aAUWeStoMu" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </li>
+                                    </ul>
+                                    <ul class="artist-list">
+                                        <li>Lucid Dreams - Mat Zo</li>
+                                        <li>Stay - Chet Porter</li>
+                                        <li>Pizza Guy - Touch Sensitive</li>
+                                    </ul>
+                                </div>
+                                <div class="name">
+                                    <h2>-Chris</h2>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="morty-description">
+                        <h3>#125 BANANA MORTY</h3>
+                        <p>This Morty has committed several unspeakable crimes while dressed as a banana. No one has seen or heard from his Rick in three years.</p>
+                        <h3>COMBINATIONS</h3>
+                        <div class="combination">
+                            <img src="img/pocket-mortys/125-banana-morty-combination.png" alt="#82 combination">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JEFF CARD -->
+                <div class="message-cards">
+                    <div class="pocket-mortys"> 
+                    <div class="front"> 
+                        <img src="img/pocket-mortys/82-one-true-morty.png" alt="#82 One True Morty">
+                    </div> 
+                    <div class="back" style="background-image: url('img/pocket-mortys/82-one-true-morty-back.png')">
+                        <div class="back-messages">
+                            <div class="message">
+                                <h2>Message:</h2>
+                                <p>Felicidades Pequeno!</p> 
+                            </div>
+                            <div class="songs">
+                                <h2>Songs You Should Listen To:</h2>
+                                <ul class="song-list">
+                                    <li>
+                                        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/510499737&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        
+
+                                    </li>
+                                    <li>
+                                        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/374237042&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                    </li>
+                                    <li>
+                                        <iframe src="https://open.spotify.com/embed/track/1AJ7vCJuLyv10zmepokuhF" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                    </li>
+                                </ul>
+                                <ul class="artist-list">
+                                    <li>Lift Me From The Ground - San Holo (Jaron Remix)</li>
+                                    <li>Let There Be House x Swish Swish - Flosstradamus Edit</li>
+                                    <li>Side EFX - Gucci Mane</li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h2>-Jeff</h2>
+                            </div>
+                    </div>
+                </div> 
+                </div>
+                <div class="morty-description">
+                <h3>#82 ONE TRUE MORTY</h3>
+                <p>This Morty is believed, by some, to be the One True Morty.</p>
+                <h3>COMBINATIONS</h3>
+                <div class="combination">
+                    <img src="img/pocket-mortys/82-one-true-morty-combination.png" alt="#82 combination">
+                </div>
+                </div>
+                </div>
+            </div>
+            <!-- PHOTOS -->
+            <div class="photos">
+                <div class="vertical-photos">
+                    <div><img src="img/tj/v1.PNG"></div>
+                    <div><img src="img/tj/v2.jpg"></div>
+                    <div><img src="img/tj/v3.jpg"></div>
+                    <div><img src="img/tj/v4.jpg"></div>
+                    <div><img src="img/tj/v5.jpg"></div>
+                    <div><img src="img/tj/v6.JPG"></div>
+                    <div><img src="img/tj/v7.jpg"></div>
+                    <div><img src="img/tj/v8.PNG"></div>
+                    <div><img src="img/tj/v9.jpg"></div>
+                    <div><img src="img/tj/v10.JPG"></div>
+                    <div><img src="img/tj/v11.JPG"></div>
+                    <div><img src="img/tj/v12.JPG"></div>
+                    <div><img src="img/tj/v13.JPG"></div>
+                    <div><img src="img/tj/v14.PNG"></div>
+                    <div><img src="img/tj/v15.JPG"></div>
+                    <div><img src="img/tj/v16.JPG"></div>
+                    <div><img src="img/tj/v17.JPG"></div>
+                </div>
+                <div class="horizontal-photos">
+                    <div><img src="img/tj/h1.jpg"></div>
+                    <div><img src="img/tj/h2.JPG"></div>
+                    <div><img src="img/tj/h3.JPG"></div>
+                    <div><img src="img/tj/h4.JPG"></div>
+                    <div><img src="img/tj/h5.jpg"></div>
+                    <div><img src="img/tj/h6.JPG"></div>
+                    <div><img src="img/tj/h7.JPG"></div>
+                    <div><img src="img/tj/h8.JPG"></div>
+                    <div><img src="img/tj/h9.jpg"></div>
+                    <div><img src="img/tj/h10.JPG"></div>
+                    <div><img src="img/tj/h11.JPG"></div>
+                    <div><img src="img/tj/h12.JPG"></div>
+                    <div><img src="img/tj/h13.JPG"></div>
+                    <div><img src="img/tj/h14.JPG"></div>
+                    <div><img src="img/tj/h15.JPG"></div>
+                    <div><img src="img/tj/h16.jpg"></div>
+                    <div><img src="img/tj/h17.jpg"></div>
+                    <div><img src="img/tj/h18.jpg"></div>
+                    <div><img src="img/tj/h19.jpg"></div>
+                    <div><img src="img/tj/h20.JPG"></div>
+                    <div><img src="img/tj/h21.JPG"></div>
+                    <div><img src="img/tj/h22.JPG"></div>
+                    <div><img src="img/tj/h23.JPG"></div>
+                    <div><img src="img/tj/h24.jpg"></div>
+                    <div><img src="img/tj/h25.JPG"></div>
+                    <div class="our-pic"><img src="img/tj/h26.jpg"></div>
+                </div>
+            </div>
+            <!-- MOVIES -->
+            <div class="movies">
+                <div class="movie-container">
+                    <h2>Chris</h2>
+                    <div class="about-movie">
+                        <h2>Burn After Reading (2008)</h2>
+                        <p>When a disc containing memoirs of a former CIA analyst (John Malkovich) falls into the hands of Linda Litzke (Frances McDormand) and Chad Feldheimer (Brad Pitt), the two gym employees see a chance to make enough money for her to have life-changing cosmetic surgery. Predictably, events whirl out of control for the duo doofuses and those in their orbit.</p>
+                    </div>
+                    <div class="trailer">
+                        <iframe width="580" height="315" src="https://www.youtube.com/embed/SVCHSiRWjJM" frameborder="0" allow="accelerometer; autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <h2>Mom</h2>
+                    <div class="about-movie">
+                        <h2>The Green Mile (1999)</h2>
+                        <p>Paul Edgecomb (Tom Hanks) walked the mile with a variety of cons. He had never encountered someone like John Coffey (Michael Clarke Duncan), a massive black man convicted of brutally killing a pair of young sisters. Coffey had the size and strength to kill anyone, but not the demeanor. Beyond his simple, naive nature and a deathly fear of the dark, Coffey seemed to possess a prodigious, supernatural gift. Paul began to question whether Coffey was truly guilty of murdering the two girls.</p>
+                    </div>
+                    <div class="trailer">
+                        <iframe width="580" height="315" src="https://www.youtube.com/embed/Ki4haFrqSrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <h2>Caleb</h2>
+                    <div class="about-movie">
+                        <h2>Pixels (2015)</h2>
+                        <p>When aliens intercept video feeds of classic arcade games and misinterpret them as a declaration of war, they attack Earth, using the games as models. Knowing that he must employ a similar strategy, President Will Cooper (Kevin James) recruits his childhood pal, former video-game champ and home-theater installer Sam Brenner (Adam Sandler), to lead a team of old-school arcade players and a military specialist (Michelle Monaghan) in an all-out battle to save the planet.</p>
+                    </div>
+                    <div class="trailer">
+                        <iframe width="580" height="315" src="https://www.youtube.com/embed/XAHprLW48no" frameborder="0" allow="accelerometer; autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <h2>Hayat</h2>
+                    <div class="about-movie">
+                        <h2>Unconditional</h2>
+                        <p>A woman's world is shattered after her sweetheart Billy is murdered in a random act of violence. After this tragic event she starts to dig around to find the killer of her husband. On her quest she reunites with her childhood best friend Joe who runs an after school program for children in his neighborhood.</p>
+                    </div>
+                    <div class="trailer">
+                        <iframe width="580" height="315" src="https://www.youtube.com/embed/TsEEUgyPmaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="movie-container">
+                    <h2>Justin</h2>
+                    <div class="about-movie">
+                        <h2>Brief, Sudden, Floating</h2>
+                        <p>This Netflix documentary looks to explore teen, binge drinking culture in the United States. Tracing the testimonials of several individuals, can we finally start to unlock the truth behind this nationwide epdidemic?</p>
+                    </div>
+                    <div class="trailer">
+                        <video controls>
+                            <source src="videos/IMG-0191.MOV" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- SPOTIFYYYYYY FOOTER FIXED -->
+            <div class="spotify">
+                <iframe src="https://open.spotify.com/embed/user/yatengteng/playlist/78lGKsVWddcmoNkR49KAkm" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </main>
+    </body>
+</html>

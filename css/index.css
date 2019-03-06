@@ -1,0 +1,603 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/backgrounds/body.jpg");
+    background-attachment: fixed;
+    font-family: 'Margarine', cursive;
+}
+
+.intro{
+    display: none;
+}
+
+/* CURSOR PAGE */
+
+.cursor > p{
+    text-align: center;
+    height: 25%;
+    font-size: 25px;
+    color: #f1efd8;
+    padding: 50px;
+}
+
+.cursor-rows{
+    color: #f1efd8;
+    text-align: center;
+}
+
+.cursor-rows img{
+    padding: 5px;
+    width: 130px;
+    height: 120px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 20px;
+    background-color: #ffffff96;
+    box-shadow: 20px 9px 20px 0px #2a1717;
+    outline: none;
+}
+
+.cursor-rows p{
+    display: inline-block;
+    width: 120px;
+    margin: 20px;
+}
+
+.cursor-button{
+    display: none;
+    font-size: 16px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 85%;
+    left: 46%;
+    border: none;
+    border-radius: 10px;
+    background-color: #070d8554;
+    color: #f1efd8;
+    font-family: 'Margarine', cursive;
+    box-shadow: 12px 9px 20px 1px #1c0320;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* LOADING MORTY PAGE */
+
+.loading-mortys{
+    display: none;
+    text-align: center;
+    color: #f1efd8;
+}
+
+.loading-mortys p{
+    padding: 140px 0 50px 0;
+    font-size: 25px;
+}
+
+.loading-mortys button{
+    display: none;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 70%;
+    left: 46%;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #070d8554;
+    color: #f1efd8;
+    font-family: 'Margarine', cursive;
+    box-shadow: 12px 9px 20px 1px #1c0320;
+    outline: none;
+    cursor: pointer;
+}
+
+/* CONFETTI PAGE */
+.confetti{
+    display: none;
+    background: url("../img/backgrounds/kanye.png") no-repeat center;
+}
+
+.confetti canvas{
+    width: 99%;
+}
+
+.confetti button{
+    display: none;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 80%;
+    left: 76%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #070d8554;
+    color: #f1efd8;
+    font-family: 'Margarine', cursive;
+    box-shadow: 12px 9px 20px 1px #1c0320;
+    outline: none;
+    cursor: pointer;
+}
+
+/* COMICS PAGES */
+
+.comics{
+    display: none;
+    color: white;
+}
+
+.infinite-timelines{
+    background: url("../img/backgrounds/infinite.png") no-repeat center;
+    height: 100vh;
+}
+
+.infinite-timelines button{
+    display: none;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 80%;
+    left: 76%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #070d8554;
+    color: #f1efd8;
+    font-family: 'Margarine', cursive;
+    box-shadow: 12px 9px 20px 1px #1c0320;
+    outline: none;
+    cursor: pointer;
+}
+
+.messages-collected{
+    display: none;
+    background: url("../img/backgrounds/collected.png") no-repeat center;
+    height: 100vh;
+}
+
+.messages-collected button{
+    display: none;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 80%;
+    left: 76%;
+    border: none;
+    border-radius: 10px;
+    background-color: #070d8554;
+    color: #f1efd8;
+    font-size: 16px;
+    font-family: 'Margarine', cursive;
+    box-shadow: 12px 9px 20px 1px #1c0320;
+    outline: none;
+    cursor: pointer;
+}
+
+.megaseeds{
+    display: none;
+    background: url("../img/backgrounds/megaseeds.png") no-repeat center;
+    height: 100vh;
+}
+
+.megaseeds button{
+    display: none;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 80%;
+    left: 76%;
+    border: none;
+    border-radius: 10px;
+    background-color: #070d8554;
+    color: #f1efd8;
+    font-size: 16px;
+    font-family: 'Margarine', cursive;
+    box-shadow: 12px 9px 20px 1px #1c0320;
+    outline: none;
+    cursor: pointer;
+}
+
+.waba{
+    display: none;
+    background: url("../img/backgrounds/waba.png") no-repeat center;
+    height: 100vh;
+}
+
+.waba button{
+    display: none;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 80%;
+    left: 76%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #070d8554;
+    color: #f1efd8;
+    font-family: 'Margarine', cursive;
+    box-shadow: 12px 9px 20px 1px #1c0320;
+    outline: none;
+    cursor: pointer;
+}
+
+/* HBD YOUTUBE LIT */
+.youtube{
+    display: none;
+    font: 5em/1 Margarine, Impact;
+}
+
+.text {
+  fill: none;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-dasharray: 60 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 3s infinite linear;
+  animation: stroke 3s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.youtube button{
+    display: none;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #070d8554;
+    color: #f1efd8;
+    font-family: 'Margarine', cursive;
+    box-shadow: 12px 9px 20px 1px #1c0320;
+    outline: none;
+    cursor: pointer;
+}
+
+/* MAIN DASHBOARD */
+main{
+    /* display: none; */
+}
+
+nav{
+    background-color: #000000d4;
+    color: #f1efd8;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav a{
+    line-height: 70px;
+    padding: 0 20px;
+    color: #f1efd8;
+    text-decoration: none;
+}
+
+.nav-messages{
+    color: #de736b;
+}
+
+/* MESSAGES */
+.messages-container{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.messages-container h2{
+    color: #f1efd8;
+}
+
+.message-cards{
+    padding: 50px;
+    height: 550px;
+}
+
+.morty-description{
+    width: 50%;
+    float: right;
+    color: #f1d95f;
+    padding-top: 70px;
+}
+
+.morty-description h3{
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.morty-description p{
+    margin: 30px 0;
+}
+
+.combination img{
+    width: 90%;
+    border-radius: 1%;
+    box-shadow: 20px 9px 20px 0px #2a1717;
+}
+
+.pocket-mortys{
+    width: 50%;
+    float: left;
+    height: 450px;
+    text-align: initial;
+}
+
+.pocket-mortys img{
+    height: 450px;
+    border-radius: 1%;
+    background-color: #ffffff96;
+    box-shadow: 20px 9px 20px 0px #2a1717;
+}
+
+.pocket-mortys .back{
+    border: none;
+    border-radius: 1%;
+    box-shadow: 20px 9px 20px 0px #2a1717;
+    background-repeat: no-repeat;
+}
+
+.pocket-mortys .back-messages{
+    height: 100%;
+    border: none;
+    border-radius: 1%;
+    background-color: #000000e0;
+    color: #f1efd8;
+    text-align: center;
+    padding: 50px;
+    letter-spacing: 1px;
+}
+
+.song-list{
+    width: 100%;
+}
+
+.song-list li,
+.artist-list li{
+    display: inline-block;
+    width: 32.5%;
+    color: #88f988;
+    padding: 10px 0;
+    vertical-align: middle;
+}
+
+.message h2,
+.songs h2{
+    color: #b6b8f3;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.name h2{
+    color:#f92961;
+    font-size: 25px;
+    padding: 30px 30px;
+    text-align: right;
+}
+
+.pocket-mortys .laura,
+.pocket-mortys .mike{
+    padding: 0 10px;
+}
+
+.pocket-mortys .laura p,
+.pocket-mortys .mike p{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.pocket-mortys .laura h2,
+.pocket-mortys .laura ul,
+.pocket-mortys .mike h2,
+.pocket-mortys .mike ul{
+    font-size: 14px;
+}
+
+.pocket-mortys .laura .name,
+.pocket-mortys .mike .name{
+    padding: 0; 
+}
+
+.laura .message h2,
+.laura .songs h2,
+.mike .message h2,
+.mike .songs h2{
+    padding: 10px;
+}
+
+/* PHOTOS */
+.photos{
+    display: none;
+    padding: 120px 50px;
+}
+
+.photos .vertical-photos,
+.photos .horizontal-photos{
+    width: 100%;
+    text-align: center;
+}
+
+.photos .vertical-photos div{
+    width: 32%;
+    height: 500px;
+    display: inline-block;
+    padding: 30px;
+}
+
+.photos .horizontal-photos div{
+    width: 44%;
+    height: 500px;
+    display: inline-block;
+    padding: 30px;
+}
+
+.photos img{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 2%;
+    box-shadow: 20px 9px 20px 0px #2a1717;
+}
+
+.photos .horizontal-photos .our-pic{
+    width: 100%;
+}
+
+
+/* MOVIES */
+.movies{
+    display: none;
+    padding: 120px 50px;
+    /* text-align: center; */
+}
+
+.movie-container{
+    width: 100%;
+}
+
+.movie-container > h2{
+    color:#f5f96a;
+    padding-left: 150px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.trailer,
+.about-movie{
+    width: 47%;
+    display: inline-block;
+    margin: 1%;
+    height: 550px;
+    float: right;
+    text-align: center;
+
+}
+
+.about-movie{
+    padding: 80px;
+    text-align: center;
+}
+
+.about-movie h2{
+    color: #5db1ef;
+    font-size: 24px;
+    margin: 25px 0;
+}
+
+.about-movie p{
+    color: #57bb57;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.trailer{
+    padding: 50px;
+}
+
+.trailer iframe{
+    box-shadow: 20px 9px 20px 0px #2a1717;
+}
+
+.trailer video{
+    height: 320px;
+    width: 320px;
+    border-radius: 5%;
+    box-shadow: 20px 9px 20px 0px #2a1717;
+}
+
+/* SPOTIFY */
+.spotify iframe{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+/* HOVER STATES */
+
+.cursor-rows img:hover,
+.cursor button:hover,
+.loading-mortys button:hover,
+.confetti button:hover,
+.infinite-timelines button:hover,
+.messages-collected button:hover,
+.megaseeds button:hover,
+.waba button:hover,
+.youtube button:hover{
+    animation: shake 0.6s;
+}
+
+nav a:hover{
+    font-size: 24px;
+}
+
+
+/* KEYFRAME ANIMATIONS */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@-webkit-keyframes stroke {
+    100% {
+      stroke-dashoffset: -400;
+    }
+}
+  
+@keyframes stroke {
+    100% {
+      stroke-dashoffset: -400;
+    }
+}
