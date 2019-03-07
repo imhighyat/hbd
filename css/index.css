@@ -9,7 +9,7 @@ body{
 }
 
 .intro{
-    /* display: none; */
+    display: none;
 }
 
 /* CURSOR PAGE */
@@ -296,7 +296,7 @@ svg {
 
 /* MAIN DASHBOARD */
 main{
-    display: none;
+    /* display: none; */
 }
 
 nav{
@@ -387,7 +387,7 @@ nav a{
     background-color: #000000e0;
     color: #f1efd8;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     letter-spacing: 1px;
 }
 
