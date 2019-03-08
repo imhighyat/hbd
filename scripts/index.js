@@ -93,6 +93,7 @@ $(document).ready(function(){
         $(".youtube iframe").attr("src", "https://www.youtube.com/embed/yPhvoEWfgIk");
         $(".youtube").css("display", "none");
         $("main").css("display", "block");
+        $("html, body, .messages-container").animate({ scrollTop: 0 });
     });
 
 
